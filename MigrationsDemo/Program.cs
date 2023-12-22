@@ -1,6 +1,8 @@
-﻿using MigrationsDemo;
+﻿using Microsoft.EntityFrameworkCore;
+using MigrationsDemo;
 
 using var db = new BlogContext();
+//db.Database.Migrate();
 
 if (!db.Posts.Any())
 {
